@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
  * La clase VistaModificar representa la interfaz gráfica para modificar la información de un contacto.
  * Permite cambiar el nombre y apellido de un contacto.
  * 
- * @author Carlos Lara - Jerardo Morales
+ * @author Carlos Lara - Jerardo Morales - Hawer Morelos - Diego Arias - Yeshua Martínez
  */
 public class VistaModificar extends javax.swing.JFrame {
 
