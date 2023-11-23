@@ -1,5 +1,9 @@
 # Agenda de Contactos - Documentación
 
+> Nombres de los integrantes
+>  Carlos Lara - Jerardo Morales - Hawer Morelos - Diego Arias - Yeshua Martínez
+
+
 Esta es una aplicación de agenda de contactos desarrollada en Java, utilizando el entorno de desarrollo Swing para la interfaz gráfica. La aplicación permite gestionar contactos, tipos de contacto y números de teléfono asociados a los contactos.
 
 ## Contenido
