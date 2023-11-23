@@ -10,7 +10,7 @@ import javax.swing.table.DefaultTableModel;
  * La clase VistaContactos representa la interfaz principal de la aplicación de contactos.
  * Permite gestionar contactos, tipos y números de teléfono asociados a los contactos.
  * 
- * @author Carlos Lara - Jerardo Morales - Hawer Morales - Diego Arias - Yeshua Martínez
+ * @author Carlos Lara - Jerardo Morales - Hawer Morelos - Diego Arias - Yeshua Martínez
  */
 public class VistaContactos extends javax.swing.JFrame {
 
