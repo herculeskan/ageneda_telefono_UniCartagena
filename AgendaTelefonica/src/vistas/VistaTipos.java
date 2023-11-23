@@ -9,7 +9,7 @@ import javax.swing.table.DefaultTableModel;
  * La clase VistaTipos representa la interfaz gráfica para gestionar los tipos de contactos.
  * Permite agregar, eliminar y visualizar tipos de contactos.
  * 
- * @author Jerardo de Jesus Morales - Carlos Lara
+ * @author Carlos Lara - Jerardo Morales - Hawer Morelos - Diego Arias - Yeshua Martínez
  */
 public class VistaTipos extends javax.swing.JFrame {
 
