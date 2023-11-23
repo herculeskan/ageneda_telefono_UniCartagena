@@ -11,7 +11,7 @@ import javax.swing.table.DefaultTableModel;
  * La clase VistaNumeros representa la interfaz gráfica para gestionar los números de contacto.
  * Permite agregar, eliminar y visualizar números asociados a un contacto.
  * 
- * @author Carlos Lara - Jerardo Morales
+ * @author Carlos Lara - Jerardo Morales - Hawer Morelos - Diego Arias - Yeshua Martínez
  */
 public class VistaNumeros extends javax.swing.JFrame {
 
