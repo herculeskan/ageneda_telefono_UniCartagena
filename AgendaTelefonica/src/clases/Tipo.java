@@ -3,7 +3,7 @@ package clases;
 /**
  * La clase Tipo representa un tipo con un código y un nombre.
  * 
- * @author Carlos Lara - Jerardo Morales - Hawer Morales - Diego Arias - Yeshua Martínez
+ * @author Carlos Lara - Jerardo Morales - Hawer Morelos - Diego Arias - Yeshua Martínez
  */
 public class Tipo {
     // Atributos
