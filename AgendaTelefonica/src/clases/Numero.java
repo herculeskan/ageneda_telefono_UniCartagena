@@ -4,7 +4,7 @@ package clases;
  * La clase Numero representa un número de teléfono con un código, un número y
  * un tipo asociado.
  * 
- * @author Carlos Lara - Jerardo de Jesus Morales
+ * @author Carlos Lara - Jerardo Morales - Hawer Morales - Diego Arias - Yeshua Martínez
  */
 public class Numero {
     // Atributos
