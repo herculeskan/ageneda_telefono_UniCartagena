@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * La clase Contacto representa un contacto con información como código, nombre,
  * apellido y una lista de números de teléfono.
  * 
- * @author Carlos Lara - Jerardo Morales
+ * @author Carlos Lara - Jerardo Morales - Hawer Morales - Diego Arias - Yeshua Martínez
  */
 public class Contacto {
     // Atributos
