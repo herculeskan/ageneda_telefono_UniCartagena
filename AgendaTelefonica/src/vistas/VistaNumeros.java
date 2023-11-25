@@ -40,6 +40,7 @@ public class VistaNumeros extends javax.swing.JFrame {
         mostrarDatos();
     }
 
+/*Get datos desde modelo     */
     public void mostrarDatos(){
     modelo.setNumRows(this.c.getNumeros().size());
     for(int i=0; i<this.c.getNumeros().size(); i++){
@@ -212,8 +213,9 @@ public class VistaNumeros extends javax.swing.JFrame {
        }
     }                                 
 
+/*Controles de acción, Si el número de teléfono brindado es igual a 10 o mayor que 0 dará un resultado, de lo contrario dará error  */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        if(tfNumero.getText().length() == 8 && jcCombox.getSelectedIndex()>0){
+        if(tfNumero.getText().length() == 10 && jcCombox.getSelectedIndex()>0){
             Numero n = new Numero();
             n.setCodigo(codigo);
             codigo++;
@@ -223,7 +225,7 @@ public class VistaNumeros extends javax.swing.JFrame {
             this.c.getNumeros().add(n);
             this.mostrarDatos();
         }else{
-        JOptionPane.showMessageDialog(null,"INGRESE LOS DATOS SOLICITADOS, EL NUMERO DEBE SER DE 8 DIGITOS");
+        JOptionPane.showMessageDialog(null,"INGRESE LOS DATOS SOLICITADOS, EL NUMERO DEBE SER DE 10 DIGITOS");
         }
     }                                        
 

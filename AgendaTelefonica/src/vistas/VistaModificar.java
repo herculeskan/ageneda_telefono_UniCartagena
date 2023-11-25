@@ -173,7 +173,7 @@ public class VistaModificar extends javax.swing.JFrame {
      * @param args the command line arguments
      */
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - NO MODIFICAR//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
