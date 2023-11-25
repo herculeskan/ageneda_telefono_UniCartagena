@@ -20,6 +20,7 @@ public class Contacto {
      * Inicializa la lista de números.
      */
     public Contacto() {
+/* Ignora este error amarillo, se creará un nuevo array y ya se quita */
         numeros = new ArrayList();
     }
 

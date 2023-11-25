@@ -154,7 +154,7 @@ public class VistaTipos extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+//botón agregar
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if(!tfTipo.getText().equals("")){
           Tipo t = new Tipo();
@@ -168,7 +168,7 @@ public class VistaTipos extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null,"INGRESE LOS DATOS SOLICITADOS");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
-
+//Botón eliminar
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         if(jtDatos.getSelectedRow()<0){
         JOptionPane.showMessageDialog(null,"SELECCIONE EL REGISTRO A ELIMINAR");
