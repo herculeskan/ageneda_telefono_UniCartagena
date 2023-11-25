@@ -13,7 +13,7 @@ import javax.swing.table.DefaultTableModel;
 public class VistaNumeros extends javax.swing.JFrame {
 
     /**
-     * Creates new form VistaNumeros
+     * Crea una nueva lista de números
      */
     Contacto c;
     VistaContactos vc;
@@ -25,6 +25,8 @@ public class VistaNumeros extends javax.swing.JFrame {
         this.c = c;
         this.vc = vc;
         this.tipos = tipos;
+        
+        //agregar columnas
         this.vc.setVisible(false);
         modelo = new DefaultTableModel();
         modelo.addColumn("CODIGO");
@@ -51,7 +53,9 @@ public class VistaNumeros extends javax.swing.JFrame {
     jtDatos.setModel(modelo);
     }
     /**
-     Este método puede ser invalido depende al editor de código
+     Este método puede ser invalido depende al editor de código.
+     * Sin embargo estos son los botones del número tipado en la interfaz
+     *     También los números que no sean del 0 al 9 no se marcarán
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
@@ -213,7 +217,9 @@ public class VistaNumeros extends javax.swing.JFrame {
        }
     }                                 
 
-/*Controles de acción, Si el número de teléfono brindado es igual a 10 o mayor que 0 dará un resultado, de lo contrario dará error  */
+/*Controles de acción, Si el número de teléfono brindado es igual a 10 o mayor que 0 dará un resultado,
+    Este es el botón guardar,
+    de lo contrario dará error  */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         if(tfNumero.getText().length() == 10 && jcCombox.getSelectedIndex()>0){
             Numero n = new Numero();
@@ -229,6 +235,7 @@ public class VistaNumeros extends javax.swing.JFrame {
         }
     }                                        
 
+    //botón eliminar
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         if(jtDatos.getSelectedRow()<0){
         JOptionPane.showMessageDialog(null,"SELECCIONE EL NUMERO A ELIMINAR");
@@ -237,7 +244,7 @@ public class VistaNumeros extends javax.swing.JFrame {
         this.mostrarDatos();
         }
     }                                        
-
+//cancel y volver al menu original
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
     this.dispose();
     this.vc.setVisible(true);

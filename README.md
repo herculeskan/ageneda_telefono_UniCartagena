@@ -1,10 +1,9 @@
 # Agenda de Contactos - Documentación
 
 > Nombres de los integrantes
->  Carlos Lara - Jerardo Morales - Hawer Morelos - Diego Arias - Yeshua Martínez
+> Carlos Lara - Jerardo Morales - Hawer Morelos - Diego Arias - Yeshua Martínez
 
 [Vídeo de youtube link privado con el vídeo](https://youtu.be/bETdnRey4Lg)
-
 
 Esta es una aplicación de agenda de contactos desarrollada en Java, utilizando el entorno de desarrollo Swing para la interfaz gráfica. La aplicación permite gestionar contactos, tipos de contacto y números de teléfono asociados a los contactos.
 
@@ -19,7 +18,7 @@ Esta es una aplicación de agenda de contactos desarrollada en Java, utilizando 
 
 El proyecto consta de varias clases Java que están organizadas en paquetes. Aquí se describen brevemente los paquetes y las clases más relevantes:
 
-- **clases**: Contiene las clases `Contacto` y `Tipo`, que representan a un contacto y a un tipo de contacto, respectivamente.
+- **clases**: Contiene las clases `Contacto`, `Numero`, `Tipo`, que representan a un contacto y a un tipo de contacto, respectivamente.
 - **vistas**: Contiene las clases relacionadas con la interfaz gráfica.
   - `VistaContactos`: La interfaz principal de la aplicación para gestionar contactos.
   - `VistaNumeros`: Ventana para gestionar números de teléfono asociados a un contacto.
