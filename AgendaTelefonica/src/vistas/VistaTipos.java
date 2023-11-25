@@ -6,25 +6,18 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
- * La clase VistaTipos representa la interfaz gráfica para gestionar los tipos de contactos.
- * Permite agregar, eliminar y visualizar tipos de contactos.
- * 
- * @author Carlos Lara - Jerardo Morales - Hawer Morelos - Diego Arias - Yeshua Martínez
+ *
+ * @author Carlos
  */
 public class VistaTipos extends javax.swing.JFrame {
 
-    // Atributos
-    ArrayList<Tipo> tipos;          // Lista de tipos de contactos
-    DefaultTableModel modelo;       // Modelo para la tabla de datos
-    static int codigo = 1;           // Código de tipo (para asignar a nuevos tipos)
-    VistaContactos vt;              // Referencia a la vista de contactos
-
     /**
-     * Constructor de la clase VistaTipos.
-     * 
-     * @param tipos Lista de tipos de contactos.
-     * @param vt Referencia a la vista de contactos.
+     * crea nuevo de  VistaTipos
      */
+    ArrayList<Tipo> tipos;
+    DefaultTableModel modelo;
+    static int codigo = 1;
+    VistaContactos vt;
     public VistaTipos(ArrayList<Tipo> tipos, VistaContactos vt) {
         initComponents();
         this.tipos = tipos;
@@ -36,20 +29,20 @@ public class VistaTipos extends javax.swing.JFrame {
         mostrarDatos();
     }
 
-    /**
-     * Método para mostrar los datos en la tabla de la interfaz gráfica.
-     */
+    
     public void mostrarDatos(){
-        modelo.setNumRows(tipos.size());
-        for(int i=0; i<tipos.size(); i++){
-            modelo.setValueAt(tipos.get(i).getCodigo(), i, 0);
-            modelo.setValueAt(tipos.get(i).getNombre(), i, 1);
-        }
-        jtDatos.setModel(modelo);
+      modelo.setNumRows(tipos.size());
+      for(int i=0; i<tipos.size(); i++){
+         modelo.setValueAt(tipos.get(i).getCodigo(), i, 0);
+         modelo.setValueAt(tipos.get(i).getNombre(), i, 1);
+      }
+      jtDatos.setModel(modelo);
     }
-
+    /**
+     Por favor no modificar este contructor
+     */
     @SuppressWarnings("unchecked")
-    // Código generado por NetBeans IDE
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -163,48 +156,37 @@ public class VistaTipos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // Guardar un nuevo tipo de contacto
         if(!tfTipo.getText().equals("")){
-            Tipo t = new Tipo();
-            t.setCodigo(codigo);
-            codigo++;
-            t.setNombre(tfTipo.getText());
-            tfTipo.setText("");
-            this.tipos.add(t);
-            mostrarDatos();
-        } else {
-            JOptionPane.showMessageDialog(null, "INGRESE LOS DATOS SOLICITADOS");
+          Tipo t = new Tipo();
+          t.setCodigo(codigo);
+          codigo++;
+          t.setNombre(tfTipo.getText());
+          tfTipo.setText("");
+          this.tipos.add(t);
+          mostrarDatos();
+        }else{
+        JOptionPane.showMessageDialog(null,"INGRESE LOS DATOS SOLICITADOS");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // Eliminar un tipo de contacto seleccionado
         if(jtDatos.getSelectedRow()<0){
-            JOptionPane.showMessageDialog(null, "SELECCIONE EL REGISTRO A ELIMINAR");
-        } else {
-            this.tipos.remove(this.jtDatos.getSelectedRow());
-            this.mostrarDatos();
+        JOptionPane.showMessageDialog(null,"SELECCIONE EL REGISTRO A ELIMINAR");
+        }else{
+        this.tipos.remove(this.jtDatos.getSelectedRow());
+        this.mostrarDatos();
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // Cancelar y volver a la vista de contactos
         this.dispose();
         this.vt.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
-     * Método principal que inicia la aplicación.
-     * 
-     * @param args Los argumentos de la línea de comandos.
+     * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VistaTipos(new ArrayList<>(), new VistaContactos()).setVisible(true);
-            }
-        });
-    }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -217,3 +199,4 @@ public class VistaTipos extends javax.swing.JFrame {
     private javax.swing.JTextField tfTipo;
     // End of variables declaration//GEN-END:variables
 }
+
